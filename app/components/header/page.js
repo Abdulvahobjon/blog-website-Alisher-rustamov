@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Leng from "../leng/page";
 
-export default function Header() {
+export default function Header({}) {
   const [selected, setSelected] = useState("");
   const [isMenu, setIsMenu] = useState(false);
 
@@ -63,7 +63,8 @@ export default function Header() {
               Ijtimoiy tarmoqlar
             </Link>
             <div className="">
-              <Leng />
+            <Leng selected={selected} setSelected={setSelected} />
+
             </div>
           </div>
         </div>
