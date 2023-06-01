@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+#blog-card-top > a:last-child {
+  display: none;
+}
+@media (max-width: 640px) {
+  #blog-card-top > a:last-child {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: #414040;
+}
