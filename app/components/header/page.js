@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import Leng from "../leng/page";
@@ -40,13 +40,19 @@ export default function Header({}) {
         >
           Xabar qoldirish
         </a>
-        <button onClick={()=>setIsMenu(!isMenu)} className="block sm:hidden ml-auto cursor-pointer p-3 rounded-10 bg-white">
+        <button
+          onClick={() => setIsMenu(!isMenu)}
+          className="block sm:hidden ml-auto cursor-pointer p-3 rounded-10 bg-white"
+        >
           <img src="./img/header/humburger.svg" alt="humburger menu" />
         </button>
       </div>
       {isMenu && (
         <div className="sm:hidden block fixed top-0 left-0 right-0 bg-white w-full h-screen pt-32">
-          <button onClick={()=>setIsMenu(false)} className="w-12 h-10 flex items-center justify-center bg-blog-orange rounded-10 absolute top-5 right-5 ">
+          <button
+            onClick={() => setIsMenu(false)}
+            className="w-12 h-10 flex items-center justify-center bg-blog-orange rounded-10 absolute top-5 right-5 "
+          >
             <img src="./img/header/Cross.svg" alt="close" />
           </button>
           <div className="flex flex-col items-center">
@@ -63,8 +69,7 @@ export default function Header({}) {
               Ijtimoiy tarmoqlar
             </Link>
             <div className="">
-            <Leng selected={selected} setSelected={setSelected} />
-
+              <Leng selected={selected} setSelected={setSelected} />
             </div>
           </div>
         </div>

@@ -10,8 +10,30 @@ export default function Article() {
         <Header />
       </div>
       <main className="block pt-14 pb-14">
+
         {/* <!-- maqolalar start --> */}
         <div className="max-w-[1432px] w-full px-4 mx-auto">
+        <Link
+            href="/"
+            className="inline-flex transition-all items-center gap-2.5 hover:text-blog-orange text-17 mb-8 "
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 21L8.11025 14.2083C7.29658 13.4062 7.29658 12.0937 8.11025 11.2917L15 4.5"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Orqaga
+          </Link>
           <section className="max-w-[650px] w-full mb-12">
             <Link
               href="/"

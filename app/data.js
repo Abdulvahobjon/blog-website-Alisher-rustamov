@@ -10,7 +10,7 @@ const data  = [
   {
     id: 2,
     img: "../img/blog-item/blog-item-1.png",
-    title: "Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
+    title: " sd as dasd Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
     dec: "Yaqinda bir psixologning suhbatini eshitib qoldim. U aytishicha o‘sha davrda hech qanday moliyaviy muhim qarorlar qabul qilish kerak emas ekan…",
     time: "13.08.2022",
   },
@@ -24,7 +24,7 @@ const data  = [
   {
     id: 4,
     img: "../img/blog-item/blog-md-item-1.png",
-    title: "Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
+    title: " asd asdXayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
     dec: "Yaqinda bir psixologning suhbatini eshitib qoldim. U aytishicha o‘sha davrda hech qanday moliyaviy muhim qarorlar qabul qilish kerak emas ekan…",
     time: "13.08.2022",
   },
@@ -38,7 +38,7 @@ const data  = [
   {
     id: 6,
     img: "../img/blog-item/blog-md-item-3.png",
-    title: "Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
+    title: "6Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
     dec: "Yaqinda bir psixologning suhbatini eshitib qoldim. U aytishicha o‘sha davrda hech qanday moliyaviy muhim qarorlar qabul qilish kerak emas ekan…",
     time: "13.08.2022",
   },
@@ -53,7 +53,7 @@ const data  = [
     id: 8,
     img: "../img/blog-item/blog-md-item-1.png",
     title:
-      "1 Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
+      "8 Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
     dec: "Yaqinda bir psixologning suhbatini eshitib qoldim. U aytishicha o‘sha davrda hech qanday moliyaviy muhim qarorlar qabul qilish kerak emas ekan…",
     time: "13.08.2022",
   },

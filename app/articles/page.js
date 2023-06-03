@@ -3,11 +3,7 @@ import Link from "next/link";
 import Pagination from "../components/pagination/page";
 import Posts from "../components/posts/page";
 import { useState } from "react";
-import BlogList from "../blog";
-
-const { default: Card } = require("../components/card/page");
 const { default: Header } = require("../components/header/page");
-
 const { default: Footer } = require("../components/footer/page");
 import data from "../data";
 export default function page() {
@@ -26,12 +22,12 @@ export default function page() {
       <div className="bg-blog-orange relative">
         <Header />
       </div>
-        <BlogList blogs={posts}/>
-      <main class="block pt-14 pb-14">
-        <div class="max-w-[1432px] w-full px-4 mx-auto">
+        {/* <BlogList blogs={posts}/> */}
+      <main className="block pt-14 pb-14">
+        <div className="max-w-[1432px] w-full px-4 mx-auto">
           <Link
             href="/"
-            class="inline-flex transition-all items-center gap-2.5 hover:text-blog-orange text-17 mb-8 "
+            className="inline-flex transition-all items-center gap-2.5 hover:text-blog-orange text-17 mb-8 "
           >
             <svg
               width="24"
@@ -51,10 +47,10 @@ export default function page() {
             Orqaga
           </Link>
 
-          <h2 class="font-extrabold text-32 mb-5">Maqolalar</h2>
-          <section class="max-w-[1052px] w-full">
+          <h2 className="font-extrabold text-32 mb-5">Maqolalar</h2>
+          <section className="max-w-[1052px] w-full">
             {/* <!-- Blog card bootom start --> */}
-            <div class="grid sm:grid-cols-1 gap-8 mb-5">
+            <div className="grid sm:grid-cols-1 gap-8 mb-5">
               <Posts posts={currentPosts} loading={loading}></Posts>
             </div>
               <Pagination
