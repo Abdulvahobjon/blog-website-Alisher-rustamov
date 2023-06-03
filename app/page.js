@@ -189,7 +189,8 @@ export default function Home() {
               <ul className="grid sm:grid-cols-1 grid-cols-1  max-w-md px-2 mx-auto gap-2.5 ">
                 <li className="">
                   <a
-                    href="#"
+                  target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100003274826765"
                     className="w-52 flex justify-center items-center gap-3 font-medium text-lg leading-6 bg-blog-grey rounded-10 hover:bg-blog-orange transition-all py-5 px-2 capitalize"
                   >
                     <img src="./img/social/telegram.svg" alt="telegram" />
@@ -198,7 +199,8 @@ export default function Home() {
                 </li>
                 <li className="">
                   <a
-                    href="#"
+                    target="_blank"
+                    href="https://t.me/alisher_rustamov"
                     className="w-52 flex justify-center items-center gap-3 font-medium text-lg leading-6 bg-blog-grey rounded-10 hover:bg-blog-orange transition-all py-5 px-2 capitalize"
                   >
                     <img src="./img/social/facebook.svg" alt="facebook" />
@@ -207,7 +209,8 @@ export default function Home() {
                 </li>
                 <li className="">
                   <a
-                    href="#"
+                  target="_blank"
+                    href="https://www.instagram.com/alisher.rustam.expert/"
                     className="w-52 flex justify-center items-center gap-3 font-medium text-lg leading-6 bg-blog-grey rounded-10 hover:bg-blog-orange transition-all py-5 px-2 capitalize"
                   >
                     <img src="./img/social/instagram.svg" alt="instagram" />
@@ -216,7 +219,8 @@ export default function Home() {
                 </li>
                 <li className="">
                   <a
-                    href="#"
+                  target="_blank"
+                    href="https://www.youtube.com/@alisherrustamov8925"
                     className="w-52 flex justify-center items-center gap-3 font-medium text-lg leading-6 bg-blog-grey rounded-10 hover:bg-blog-orange transition-all py-5 px-2 capitalize"
                   >
                     <img src="./img/social/youtube.svg" alt="youtube" />
