@@ -48,7 +48,7 @@ export default function Header({}) {
         </button>
       </div>
       {isMenu && (
-        <div className="sm:hidden block fixed z-50 top-0 left-0 right-0 bg-white w-full h-screen pt-32">
+        <div className="sm:hidden block fixed !z-50 top-0 left-0 right-0 bg-white w-full h-screen pt-32">
           <button
             onClick={() => setIsMenu(false)}
             className="w-12 h-10 flex items-center justify-center bg-blog-orange rounded-10 absolute top-5 right-5 "
@@ -57,7 +57,7 @@ export default function Header({}) {
           </button>
           <div className="flex flex-col items-center">
             <Link
-              href="#"
+              href="/articles"
               className="py-3 px-5 bg-[#F6F7F8] font-semibold text-2xl leading-9 text-black rounded-20 mb-12 hover:bg-blog-orange transition-all"
             >
               Maqolalar

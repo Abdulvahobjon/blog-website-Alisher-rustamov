@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* <!-- hero section start --> */}
         <section className="md:pt-28 pt-22 md:pb-48 pb-36">
-          <div className="max-w-[1432px] px-4 mx-auto relative z-10">
+          <div className="max-w-[1432px] px-4 mx-auto relative">
             <h1 className="font-bold text-40 md:text-77 sm:text-50 uppercase max-w-34 sm:max-w-md mb-5">
               Alisher Rustamov
             </h1>
