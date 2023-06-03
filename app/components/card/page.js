@@ -4,7 +4,7 @@ import React from "react";
 export default function Card({ img, title, text, time , id }) {
   return (
     <Link
-      href="#"
+      href={`/${id-1}`}
       className="flex md:gap-2 gap-5 sm:gap-9 flex-col sm:flex-row  justify-between items-start group"
     >
       <div className="max-w-lg">

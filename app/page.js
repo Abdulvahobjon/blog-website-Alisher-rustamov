@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import Card from "./components/card/page";
 import FooterFull from "./components/footerFull/page";
@@ -74,7 +75,7 @@ export default function Home() {
               {
                 currentPostsTop.map(item=>{
                   return   <a key={item.id}
-                  href="#"
+                  href={`/${item.id -1}`}
                   className="block sm:flex lg:block group items-start justify-between gap-9 lg:hover:shadow-card-shadow rounded-30 transition-all ease-linear  lg:py-5 lg:px-6"
                 >
                   <img
@@ -123,6 +124,7 @@ export default function Home() {
                     img={item.img}
                     time={item.time}
                     text={item.dec}
+                    id={item.id}
                   />
                 );
               })}
