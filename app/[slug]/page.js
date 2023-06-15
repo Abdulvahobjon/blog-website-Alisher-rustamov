@@ -6,13 +6,8 @@ import Header from "../components/header/page";
 import data from "../data";
 
 export default function page({ params }) {
-  function shuffleArray(array) {
-    return array.sort(function() {
-      return 0.5 - Math.random();
-    });
-  }
-  const shuffledArray = shuffleArray(data);
-  const currentPostsTop = shuffledArray.slice(0, 4);
+
+  const currentPostsTop = data.slice(0, 4);
   return (
     <div>
       <div className="bg-blog-orange relative">
@@ -53,7 +48,7 @@ export default function page({ params }) {
                 src={data[params.slug].img}
                 alt=""
               />
-              <div className="text-17">{data[params.slug].dec}</div>
+              <div className="text-17"  dangerouslySetInnerHTML={{ __html: data[params.slug].dec }}></div>
             </div>
           </section>
 
@@ -69,7 +64,7 @@ export default function page({ params }) {
                 {currentPostsTop.map((item) => {
                   return (
                     <Link key={item.id}
-                      href={`/${item.id-1}`}
+                      href={`/${item.id}`}
                       className="block sm:flex lg:block group items-start justify-between gap-9 lg:hover:shadow-card-shadow rounded-30 transition-all ease-linear  lg:py-5 lg:px-6"
                     >
                       <img
@@ -82,7 +77,7 @@ export default function page({ params }) {
                           {item.id}{item.title}
                         </h3>
                         <div className="lg:block hidden mb-2.5">
-                          <p className="text-17 line-clamp-3">{item.dec}</p>
+                          <p className="text-17 line-clamp-3"  dangerouslySetInnerHTML={{ __html: item.dec }}></p>
                         </div>
                         <time className="inline-block py-4 px-2.5 font-medium text-13 bg-blog-grey rounded-10">
                           {item.time}

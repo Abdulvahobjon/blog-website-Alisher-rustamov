@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     img: "../img/blog-item/blog-item-2.png",
-    title: "1 Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
+    title: "Xayotda shunday vaziyatlar bo‘ladiki, kimdan yordam so‘ramang...",
     dec: "  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum deserunt ab in laborum deleniti, beatae libero qui itaque quam consequatur odit explicabo ad esse minima accusantium aspernatur accusamus maiores perferendis, culpa corrupti saepe! Autem, veniam distinctio voluptatem deleniti obcaecati suscipit earum ratione eveniet tempore modi enim, fuga repellendus labore deserunt esse totam mollitia minima. Dignissimos veniam sequi omnis fugiat dolor qui at, molestias assumenda illum commodi temporibus sunt reiciendis laborum non. Possimus, facere. Adipisci possimus cumque praesentium itaque beatae, labore iusto veritatis dolore ut a iste inventore quibusdam quasi consectetur eaque, at, animi perspiciatis? Similique expedita tempora temporibus rerum sint enim voluptas saepe magnam eius voluptatum harum quia amet, nobis ad consectetur repudiandae debitis mollitia quam porro excepturi dolorem distinctio autem? Animi, molestias.",
     time: "13.08.2022",
   },

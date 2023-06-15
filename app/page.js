@@ -75,7 +75,7 @@ export default function Home() {
               {
                 currentPostsTop.map(item=>{
                   return   <a key={item.id}
-                  href={`/${item.id -1}`}
+                  href={`/${item.id-1}`}
                   className="block sm:flex lg:block group items-start justify-between gap-9 lg:hover:shadow-card-shadow rounded-30 transition-all ease-linear  lg:py-5 lg:px-6"
                 >
                   <img
@@ -124,7 +124,7 @@ export default function Home() {
                     img={item.img}
                     time={item.time}
                     text={item.dec}
-                    id={item.id}
+                    id={item.id-1}
                   />
                 );
               })}
@@ -238,3 +238,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+

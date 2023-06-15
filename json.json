@@ -1,0 +1,515 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Blog API",
+    "description": "Shaxsiy blog uchun API. \nVideo bo'limida 'search' va 'ordering' ni ishlatish uchun urls: 'video/?search=soz', 'video/?ordering=ustun'",
+    "license": { "name": "Akmaljon" },
+    "version": "v1"
+  },
+  "host": "alisherrustamovblog.pythonanywhere.com",
+  "schemes": ["http"],
+  "basePath": "/",
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "securityDefinitions": { "Basic": { "type": "basic" } },
+  "security": [{ "Basic": [] }],
+  "paths": {
+    "/faoliyatlar/": {
+      "get": {
+        "operationId": "faoliyatlar_list",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["faoliyatlar"]
+      },
+      "parameters": []
+    },
+    "/hamkorlar/": {
+      "get": {
+        "operationId": "hamkorlar_list",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["hamkorlar"]
+      },
+      "parameters": []
+    },
+    "/haqida/": {
+      "get": {
+        "operationId": "haqida_list",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Haqida_toliq" }
+            }
+          }
+        },
+        "tags": ["haqida"]
+      },
+      "parameters": []
+    },
+    "/haqida/{id}/": {
+      "get": {
+        "operationId": "haqida_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Haqida_toliq" }
+          }
+        },
+        "tags": ["haqida"]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this haqida_toliq.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/home/": {
+      "get": {
+        "operationId": "home_list",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Home_page" }
+            }
+          }
+        },
+        "tags": ["home"]
+      },
+      "parameters": []
+    },
+    "/home/{id}/": {
+      "get": {
+        "operationId": "home_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Home_page" }
+          }
+        },
+        "tags": ["home"]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this home_page.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/ijtimoiy-tarmoq/": {
+      "get": {
+        "operationId": "ijtimoiy-tarmoq_list",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Ijtimoiy_tarmoq_url" }
+            }
+          }
+        },
+        "tags": ["ijtimoiy-tarmoq"]
+      },
+      "parameters": []
+    },
+    "/ijtimoiy-tarmoq/{id}/": {
+      "get": {
+        "operationId": "ijtimoiy-tarmoq_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Ijtimoiy_tarmoq_url" }
+          }
+        },
+        "tags": ["ijtimoiy-tarmoq"]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this ijtimoiy_tarmoq_url.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/maqola/{id}/": {
+      "get": {
+        "operationId": "maqola_read",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["maqola"]
+      },
+      "parameters": [
+        { "name": "id", "in": "path", "required": true, "type": "string" }
+      ]
+    },
+    "/maqolalar-bosh-menu/": {
+      "get": {
+        "operationId": "maqolalar-bosh-menu_list",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["maqolalar-bosh-menu"]
+      },
+      "parameters": []
+    },
+    "/maqolalar-top/": {
+      "get": {
+        "operationId": "maqolalar-top_list",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["maqolalar-top"]
+      },
+      "parameters": []
+    },
+    "/maqolalar/": {
+      "get": {
+        "operationId": "maqolalar_list",
+        "description": "",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["maqolalar"]
+      },
+      "parameters": []
+    },
+    "/menu/": {
+      "get": {
+        "operationId": "menu_list",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Menu" }
+            }
+          }
+        },
+        "tags": ["menu"]
+      },
+      "parameters": []
+    },
+    "/menu/{id}/": {
+      "get": {
+        "operationId": "menu_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Menu" }
+          }
+        },
+        "tags": ["menu"]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this menu.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/murojaat/": {
+      "post": {
+        "operationId": "murojaat_create",
+        "description": "",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Murojaat" }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Murojaat" }
+          }
+        },
+        "tags": ["murojaat"]
+      },
+      "parameters": []
+    },
+    "/video/": {
+      "get": {
+        "operationId": "video_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "description": "A search term.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ordering",
+            "in": "query",
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Video" }
+            }
+          }
+        },
+        "tags": ["video"]
+      },
+      "parameters": []
+    },
+    "/video/{id}/": {
+      "get": {
+        "operationId": "video_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": { "$ref": "#/definitions/Video" }
+          }
+        },
+        "tags": ["video"]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this video.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "Haqida_toliq": {
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "sarlavha": {
+          "title": "Sarlavha",
+          "type": "string",
+          "maxLength": 50,
+          "x-nullable": true
+        },
+        "sarlavhaeng": {
+          "title": "Sarlavhaeng",
+          "type": "string",
+          "maxLength": 50,
+          "x-nullable": true
+        },
+        "sarlavharu": {
+          "title": "Sarlavharu",
+          "type": "string",
+          "maxLength": 50,
+          "x-nullable": true
+        },
+        "matn": { "title": "Matn", "type": "string", "x-nullable": true },
+        "matneng": { "title": "Matneng", "type": "string", "x-nullable": true },
+        "matnru": { "title": "Matnru", "type": "string", "x-nullable": true },
+        "rasm": {
+          "title": "Rasm",
+          "type": "string",
+          "readOnly": true,
+          "x-nullable": true,
+          "format": "uri"
+        },
+        "hozirgi_orni": {
+          "title": "Hozirgi orni",
+          "type": "string",
+          "maxLength": 200,
+          "x-nullable": true
+        },
+        "hozirgi_ornieng": {
+          "title": "Hozirgi ornieng",
+          "type": "string",
+          "maxLength": 200,
+          "x-nullable": true
+        },
+        "hozirgi_orniru": {
+          "title": "Hozirgi orniru",
+          "type": "string",
+          "maxLength": 200,
+          "x-nullable": true
+        }
+      }
+    },
+    "Home_page": {
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "ism": {
+          "title": "Ism",
+          "type": "string",
+          "maxLength": 50,
+          "x-nullable": true
+        },
+        "ismru": {
+          "title": "Ismru",
+          "type": "string",
+          "maxLength": 50,
+          "x-nullable": true
+        },
+        "matn": {
+          "title": "Matn",
+          "type": "string",
+          "maxLength": 100,
+          "x-nullable": true
+        },
+        "matneng": {
+          "title": "Matneng",
+          "type": "string",
+          "maxLength": 100,
+          "x-nullable": true
+        },
+        "matnru": {
+          "title": "Matnru",
+          "type": "string",
+          "maxLength": 100,
+          "x-nullable": true
+        },
+        "haqida": {
+          "title": "Haqida",
+          "type": "string",
+          "maxLength": 20,
+          "x-nullable": true
+        },
+        "haqidaeng": {
+          "title": "Haqidaeng",
+          "type": "string",
+          "maxLength": 20,
+          "x-nullable": true
+        },
+        "haqidaru": {
+          "title": "Haqidaru",
+          "type": "string",
+          "maxLength": 20,
+          "x-nullable": true
+        },
+        "rasm": {
+          "title": "Rasm",
+          "type": "string",
+          "readOnly": true,
+          "x-nullable": true,
+          "format": "uri"
+        }
+      }
+    },
+    "Ijtimoiy_tarmoq_url": {
+      "required": ["nom", "url"],
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "nom": {
+          "title": "Nom",
+          "type": "string",
+          "maxLength": 30,
+          "minLength": 1
+        },
+        "url": {
+          "title": "Url",
+          "type": "string",
+          "format": "uri",
+          "maxLength": 200,
+          "minLength": 1
+        }
+      }
+    },
+    "Menu": {
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "nom": {
+          "title": "Nom",
+          "type": "string",
+          "maxLength": 30,
+          "x-nullable": true
+        },
+        "nomeng": {
+          "title": "Nomeng",
+          "type": "string",
+          "maxLength": 30,
+          "x-nullable": true
+        },
+        "nomru": {
+          "title": "Nomru",
+          "type": "string",
+          "maxLength": 30,
+          "x-nullable": true
+        }
+      }
+    },
+    "Murojaat": {
+      "required": ["matn"],
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "matn": { "title": "Matn", "type": "string", "minLength": 1 }
+      }
+    },
+    "Video": {
+      "type": "object",
+      "properties": {
+        "id": { "title": "ID", "type": "integer", "readOnly": true },
+        "sana": {
+          "title": "Sana",
+          "type": "string",
+          "format": "date",
+          "readOnly": true
+        },
+        "url": {
+          "title": "Url",
+          "type": "string",
+          "format": "uri",
+          "maxLength": 200,
+          "x-nullable": true
+        },
+        "rasm": {
+          "title": "Rasm",
+          "type": "string",
+          "readOnly": true,
+          "x-nullable": true,
+          "format": "uri"
+        }
+      }
+    }
+  }
+}
