@@ -16,9 +16,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}> {children}
       
-      <script src="./chat.js">
-
-      </script>
+     
       </body>
       
     </html>
