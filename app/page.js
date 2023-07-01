@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Card from "./components/card/page";
 import FooterFull from "./components/footerFull/page";

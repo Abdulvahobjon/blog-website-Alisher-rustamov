@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import Pagination from "../components/pagination/page";
@@ -6,6 +7,7 @@ import { useState } from "react";
 const { default: Header } = require("../components/header/page");
 const { default: Footer } = require("../components/footer/page");
 import data from "../data";
+
 export default function page() {
   const [posts, setPosts] = useState(data);
   const [loading] = useState(false);

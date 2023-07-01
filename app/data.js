@@ -234,4 +234,10 @@ const data = [
   },
 ];
 
-export default data;
+export default data
+
+
+// export default async function PostData(){
+//   const data = await getData();
+//   return(1)
+// }
