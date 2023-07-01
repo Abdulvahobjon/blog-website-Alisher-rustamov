@@ -1,6 +1,4 @@
-"use client";
 
-import React, { useState } from "react";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
 import { headers } from "next/headers";
@@ -9,7 +7,6 @@ import Hamkorlar from "../components/hamkorlar/peach";
 import Faoliyatlar from "../components/faoliyatlar/peach";
 
 async function getData() {
-  const [lak , setLake] = useState(1)
   const headersInstance = headers();
   const authorization = headersInstance.get(
     "xWnvZDK5GO6FLlB8dBMKyQrcOWJws9GPl16s3gf0PnbFYIphYKgMaXejquOQymbU"
